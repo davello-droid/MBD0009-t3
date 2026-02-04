@@ -37,6 +37,7 @@ Expand-Archive .\data\m5-forecasting-accuracy.zip -DestinationPath .\data -Force
 | `sales_train_evaluation.csv` |  Ventas diarias por producto (30,490 series × 1,941 días) |
 | `calendar.csv` | Información de fechas, eventos y SNAP |
 | `sell_prices.csv` | Precios semanales por producto y tienda |
+| `online_retail_II.csv` |  Transacciones de un retailer online UK (2009-2011)- ~1 millón de transacciones |
 
 ---
 ## Autor
