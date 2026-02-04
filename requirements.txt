@@ -1,0 +1,10 @@
+numpy
+pandas
+statsmodels
+matplotlib
+scipy
+scikit-learn
+mlforecast
+lightgbm
+xgboost
+kaggle
