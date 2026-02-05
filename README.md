@@ -29,6 +29,9 @@ $env:KAGGLE_API_TOKEN="PEGA_TU_TOKEN"
 #ejecuta el siguiente comando para descargar dataset de kaggle en carpeta "data":
 kaggle competitions download -c m5-forecasting-accuracy -p .\data
 Expand-Archive .\data\m5-forecasting-accuracy.zip -DestinationPath .\data -Force
+kaggle datasets download -d mashlyn/online-retail-ii-uci -p .\data
+Expand-Archive .\data\online-retail-ii-uci.zip -DestinationPath .\data -Force
+
 
 ```
 ## Datasets Utilizados
