@@ -8,8 +8,10 @@
 - Felipe Valdivia
 """
 def run() -> None:
+    print("=" * 150)
+    print("Pregunta 6: Pricing Dinámico y Discriminación de Precios")
+    print("=" * 150)
     # a)
-
     #a.1) Calcular margen de contribución actual (%)
     precio = 3500
     cv = 2100
@@ -91,7 +93,6 @@ def run() -> None:
     print("#"*80)
 
     #b)
-
     #1.b) Calcular precio óptimo por segmento
     Q_perdida = 0.3
     p_op_ejecutivo = round(precio * (1+(Q_perdida/(-b_ejecutivo))), 4)
@@ -212,7 +213,6 @@ def run() -> None:
     print("#"*80)
 
     #c)
-
     #1.c) Estrategia de comunicación
 
     print("#"*80)
@@ -261,7 +261,6 @@ def run() -> None:
     print("#"*80)
 
     #d)
-
     #1.d) Discriminación de precios
 
     print("#"*80)
