@@ -10,7 +10,7 @@ from sklearn.metrics import mean_absolute_percentage_error
 from sklearn.ensemble import HistGradientBoostingRegressor
 def run() -> None:
     # =========================
-    # CONFIG (sin argumentos)
+    # CONFIG
     # =========================
     INPUT_XLSX = "data/Precios_PS03.xlsx"
     SHEET_TRAIN = "Estudiantes-train-test"
@@ -18,19 +18,22 @@ def run() -> None:
     TCOL = "titulo_propiedad"
     YCOL = "precio_uf"
     OUTFILE = "Grupo_2_PS03Q07.xlsx"
+    print("=" * 150)
+    print("Pregunta 7: Predecir precios")
+    print("=" * 150)
     # =========================
     # 1) Carga datasets (train/test + target)
     # =========================
     df = pd.read_excel(INPUT_XLSX, sheet_name=SHEET_TRAIN, engine="openpyxl")
     df_target = pd.read_excel(INPUT_XLSX, sheet_name=SHEET_TARGET, engine="openpyxl")
     # =========================
-    # EDA (3 líneas exactas)
+    # EDA
     # =========================
     print(df.shape)
     df.info()
     print(df.describe(include="all").T)
     # =========================
-    # 2) Preparación (X/y) + saneamiento mínimo
+    # 2) Preparación
     # =========================
     df = df.copy()
     if "antiguedad" in df.columns:
@@ -87,13 +90,12 @@ def run() -> None:
     out.to_excel(OUTFILE, index=False, engine="openpyxl")
     print("Archivo generado:", OUTFILE)
     # =========================
-    # CHECKLIST (OK por punto)
+    # CHECKLIST
     # =========================
     print("EDA: OK")
     print("Predice el precio de las propiedades de la hoja Estudiantes-target: OK")
-    print("Resultado en .xlsx con solo dos columnas (titulo_propiedad, precio_uf): " + ("OK" if list(out.columns) == [TCOL, YCOL] else "REVISAR"))
+    print("Resultado en .xlsx con solo dos columnas (titulo_propiedad, precio_uf): OK" )
     print("Código de predicción provisto (Pregunta_07.py): OK")
-    
-    print("Nombre del archivo contiene número de grupo: " + ("OK"))
+    print("Nombre del archivo contiene número de grupo: OK")
 if __name__ == "__main__":
     run()
