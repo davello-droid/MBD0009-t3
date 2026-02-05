@@ -38,8 +38,7 @@ Expand-Archive .\data\m5-forecasting-accuracy.zip -DestinationPath .\data -Force
 | `calendar.csv` | Información de fechas, eventos y SNAP |
 | `sell_prices.csv` | Precios semanales por producto y tienda |
 | `online_retail_II.csv` |  Transacciones de un retailer online UK (2009-2011)- ~1 millón de transacciones |
-| `Precios_PS03.xlsx` |  precios_propiedades.xlsx contiene precios de propiedades de Santiago. En la hoja
-Estudiantes‐train‐test vienen datos de más de 10 mil propiedades. |
+| `Precios_PS03.xlsx` |  precios_propiedades.xlsx contiene precios de propiedades de Santiago. En la hoja Estudiantes‐train‐test vienen datos de más de 10 mil propiedades. |
 
 ---
 ## Autor
