@@ -24,6 +24,9 @@ def run() -> None:
         usecols=["store_id", "item_id", "wm_yr_wk", "sell_price"],
         dtype={"store_id": "category", "item_id": "category", "wm_yr_wk": "int32", "sell_price": "float32"},
     )
+    print("=" * 150)
+    print("Pregunta 4: Implementación de Forecasting con MLForecast")
+    print("=" * 150)
     # =========================
     # a) Preparación de datos
     # =========================
@@ -227,3 +230,4 @@ def run() -> None:
 
 if __name__ == "__main__":
     run()
+
