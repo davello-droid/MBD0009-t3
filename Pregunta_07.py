@@ -17,7 +17,7 @@ def run() -> None:
     SHEET_TARGET = "Estudiantes-target"
     TCOL = "titulo_propiedad"
     YCOL = "precio_uf"
-    OUTFILE = "Grupo_2_PS03Q07.xlsx"
+    OUTFILE = "outputs/Grupo_2_PS03Q07.xlsx"
     print("=" * 150)
     print("Pregunta 7: Predecir precios")
     print("=" * 150)
@@ -99,3 +99,4 @@ def run() -> None:
     print("Nombre del archivo contiene número de grupo: OK")
 if __name__ == "__main__":
     run()
+
