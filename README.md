@@ -118,5 +118,4 @@ python Pregunta_07.py
 - Felipe Valdivia
 - Daniel Avello
 - Roberto Sepúlveda
-- Roberto Sepulveda
 ---
